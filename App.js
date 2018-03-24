@@ -1,24 +1,22 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import firebase from "firebase";
 
 import { Header } from "./src/components/common";
+import LoginForm from "./src/components/LoginForm";
 
 export default class App extends React.Component {
+  componentWillMount() {
+
+  }
+
   render() {
     return (
       <View>
         <Header headerText={"Authentication"} />
         <Text>An App!</Text>
+        <LoginForm />
       </View>
     );
   }
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: "#fff",
-//     alignItems: "center",
-//     justifyContent: "center"
-//   }
-// });
