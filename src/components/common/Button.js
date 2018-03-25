@@ -4,7 +4,7 @@ import CardSection from "./CardSection";
 
 const Button = ({ onPress, children }) => {
   return (
-    <TouchableOpacity style={styles.buttonStyles} onPress={onPress}>
+    <TouchableOpacity onPress={onPress} style={styles.buttonStyle}>
       <Text style={styles.textStyle}>{children}</Text>
     </TouchableOpacity>
   );
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     paddingBottom: 10
   },
-  buttonStyles: {
+  buttonStyle: {
     flex: 1,
     alignSelf: "stretch",
     backgroundColor: "#fff",
